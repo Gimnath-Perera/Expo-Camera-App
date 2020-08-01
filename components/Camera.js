@@ -11,7 +11,7 @@ export class Camera extends Component {
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
         allowsEditing: true,
         aspect: [1, 1],
-        quality: 1
+        quality: 1 //1 means highest quality
       });
       if (!data.cancelled) {
         let newFile = {
@@ -49,6 +49,7 @@ export class Camera extends Component {
   };
 
   onUpload = async (image) => {
+    // Do what ever you need with the image.
     console.log(image);
   };
 
